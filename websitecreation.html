@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Pricing Section</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- sub -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Amita:wght@400;700&family=Faster+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <style>
+        #Main-minuo {
+            background-color: #043452;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+            box-sizing: border-box;
+        }
+
+        .Minuo a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin-right: 20px;
+            transition: color 0.3s, font-size 0.3s;
+        }
+
+        .Minuo a:hover {
+            color: #413d9d;
+            font-size: 20px;
+        }
+
+        .icon img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            transition: background-color 1s;
+        }
+
+        .icon:hover img {
+            background-color: #106c08;
+        }
+        /* Custom CSS for pricing component */
+        .pricing-header {
+            background-color: #f8f9fa;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .card-body {
+            padding: 2rem;
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 50px;
+            padding: 0.5rem 2rem;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+        .pricing-header {
+        background-color: #f8f9fa;
+        padding: 3rem 1rem;
+        text-align: center;
+    }
+    .card {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .card-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .card-body {
+        padding: 2rem;
+    }
+    .btn-custom {
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 50px;
+        padding: 0.5rem 2rem;
+    }
+    .btn-custom:hover {
+        background-color: #0056b3;
+    }
+    /* steps  */
+    .steps-section {
+        margin-top: 4rem;
+        text-align: center;
+    }
+    .step {
+        margin-bottom: 2rem;
+    }
+    .step-icon {
+        font-size: 3rem;
+        color: #007bff;
+        margin-bottom: 1rem;
+    }
+    .step-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+    .step-description {
+        font-size: 1rem;
+        color: #6c757d;
+    }
+
+    /* font */
+    .merriweather-light {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.contact-us {
+            background-color: #043452;
+            color: rgba(7, 5, 45, 0);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .subscribe-input {
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            width: 70%;
+            margin-right: 10px;
+        }
+        .subscribe-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0056b3;
+            color: white;
+            cursor: pointer;
+        }
+        .subscribe-button:hover {
+            background-color: #004494;
+        }
+    </style>
+</head>
+<body class="merriweather-light " style="font-size: 16px;">
+    <div class="container">
+         <!-- Main menu -->
+    <div id="Main-minuo">
+        <div class="Minuo">
+            <a href="./updatedhome.html" class="active mate-sc-regular animate__animated animate__zoomIn">Home</a>
+           
+        </div>
+        <div class="icon">
+            <a href="https://wa.me/0556671198">
+                <img src="./whatsapp.webp" alt="WhatsApp">
+            </a>
+            <a href="https://www.instagram.com/talentonlineservices?utm_source=qr">
+                <img src="./instegram.jpg" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/TalentOnlineServices?mibextid=ZbWKwL">
+                <img src="./facebook.avif" alt="Facebook">
+            </a>
+            <a href="https://www.snapchat.com/add/talento746?share_id=i2lcrLRSgxY&locale=en-GB">
+                <img src="./sn.jpeg" alt="Snapchat">
+            </a>
+            <a href="https://www.linkedin.com/in/talento-online-services-967538310?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BuxoFRjwgRzmP0hAOJG1Zzg%3D%3D">
+                <img src="./hd-blue-linkedin-in-text-word-png-31624155568wkoqhbzpbn.png" alt="LinkedIn">
+            </a>
+        </div>
+        <div class="logo">
+            <img src="./Last updated logo.png" alt="Logo" style="height: 65px;">
+        </div>
+    </div>
+    
+    
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <!-- Plan -->
+    <div class="container steps-section">
+        <h1 class="text-center mb-4 merriweather-light">Steps to Create Your Website</h1>
+        <div class="row">
+            <div class="col-md-3 step">
+                <div class="step-icon">1️⃣</div>
+                <div class="step-title">Check the Price List</div>
+                <div class="step-description">Review our pricing plans and choose the one that fits your needs.</div>
+            </div>
+            <div class="col-md-3 step">
+                <div class="step-icon">2️⃣</div>
+                <div class="step-title">Ask for a Meeting</div>
+                <div class="step-description">Contact us to schedule a meeting and discuss your project.</div>
+            </div>
+            <div class="col-md-3 step">
+                <div class="step-icon">3️⃣</div>
+                <div class="step-title">Receive Your Plan</div>
+                <div class="step-description">Get a detailed plan for your website project from our experts.</div>
+            </div>
+            <div class="col-md-3 step">
+                <div class="step-icon">4️⃣</div>
+                <div class="step-title">Payment</div>
+                <div class="step-description">Make the payment and we’ll start building your website.</div>
+            </div>
+        </div>
+        <!-- Pricing Cards -->
+    <div class="container">
+        <h1 class="text-center mb-4merriweather-light">Pricing</h1>
+        <p class="fs-5 text-muted">Contact us to bring your website ideas to life; browse our pricing options below</p>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <!-- Pricing cards (unchanged) -->
+           
+                
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Besic Plan</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">AED 300 <small class="text-muted">/ mo</small></h1>
+                            <p>landing page / one page</p>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>4 section</li>
+                                <li>Basic SEO</li>
+                                <li>Responsive Web & Mobile</li>
+                                <li>Free hosting and domin one year</li>
+                            </ul>
+                            <!-- <button type="button" class="w-100 btn btn-lg btn-custom">Sign up </button> -->
+                        </div>
+                 
+                 
+            
+        </div>
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-white bg-primary border-primary">
+                    <h4 class="my-0 fw-normal">Popular Plan</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">AED 879 <small class="text-muted">/ mo</small></h1>
+                    <p>E-commerce</p>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>7 pages</li>
+                        <li>4 section</li>
+                        <li>Advanced SEO</li>
+                        <li>Responsive Web & Mobile</li>
+                        <li>Admin dashboard</li>
+                        <li>Free hosting and domin one year</li>
+                    </ul>
+                    <!-- <button type="button" class="w-100 btn btn-lg btn-custom">Get started</button> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Medium Plan</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">AED 650 <small class="text-muted">/ mo</small></h1>
+                    <p>landing page / E-commerce</p>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>4 pages</li>
+                        <li>4 section</li>
+                        <li>Besic SEO</li>
+                        <li>Responsive Web & Mobile</li>
+                        <li>Free hosting and domin one year</li>
+                    </ul>
+                    <!-- <button type="button" class="w-100 btn btn-lg btn-custom">Contact us</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </div>
+            <h1 class="text-center mb-4merriweather-light">Pricing</h1>
+            <p class="fs-5 text-muted">Contact us to bring your website ideas to life; browse our pricing options below</p>
+        </div>
+    
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Besic Plan</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">AED 300 <small class="text-muted">/ mo</small></h1>
+                        <p>landing page / one page</p>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>4 section</li>
+                            <li>Basic SEO</li>
+                            <li>Responsive Web & Mobile</li>
+                            <li>Free hosting and domin one year</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-custom">Sign up </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3 text-white bg-primary border-primary">
+                        <h4 class="my-0 fw-normal">Popular Plan</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">AED 879 <small class="text-muted">/ mo</small></h1>
+                        <p>E-commerce</p>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>7 pages</li>
+                            <li>4 section</li>
+                            <li>Advanced SEO</li>
+                            <li>Responsive Web & Mobile</li>
+                            <li>Admin dashboard</li>
+                            <li>Free hosting and domin one year</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-custom">Get started</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Medium Plan</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">AED 650 <small class="text-muted">/ mo</small></h1>
+                        <p>landing page / E-commerce</p>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>4 pages</li>
+                            <li>4 section</li>
+                            <li>Besic SEO</li>
+                            <li>Responsive Web & Mobile</li>
+                            <li>Free hosting and domin one year</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-custom">Contact us</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <div class="container">
+        <h1 class="text-center my-4">Compare Our Plans</h1>
+        <table class="table table-bordered pricing-table">
+            <thead class="table-light">
+                <tr>
+                    <th>Feature</th>
+                    <th>Besic</th>
+                    <th>Popular</th>
+                    <th>Medium</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="plan-name">Plan Name</td>
+                    <td class="plan-name">Besic</td>
+                    <td class="plan-name">Popular</td>
+                    <td class="plan-name">Medium</td>
+                </tr>
+                <tr>
+                    <td class="price">Price</td>
+                    <td class="price">AED 300  / mo</td>
+                    <td class="price">AED 879/ mo</td>
+                    <td class="price">AED 650 / mo</td>
+                </tr>
+              
+                <!-- <tr>
+                    <td>Storage</td>
+                    <td>2 GB</td>
+                    <td>10 GB</td>
+                    <td>15 GB</td>
+                </tr> -->
+                <tr>
+                    <td>Email Support</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Priority Email Support</td>
+                    <td></td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Phone Support</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>SEO</td>
+                    <td>Basic CEO</td>
+                    <td>Advanced CEO</td>
+                    <td>Basic CEO</td>
+                </tr>
+                <!-- <tr>
+                    <td></td>
+                    <td><button class="btn btn-custom">Sign up </button></td>
+                    <td><button class="btn btn-custom">Get started</button></td>
+                    <td><button class="btn btn-custom">Contact us</button></td>
+                </tr> -->
+            </tbody>
+        </table>
+           <!-- Footer -->
+    <footer class="text-white mt-5" style="background-color: rgba(5, 5, 48, 0.962);">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p style="font-size: 16px;">Welcome to Talento Online Services, where we offer a full range of professional online solutions. Our goal is to simplify your life by managing all your needs online, enabling you to prioritize what matters most. Enjoy seamless, expert service from home while we take care of everything for you.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled" style="color: white;">
+                        <li><a href="./updatedhome.html" style="color: white;">Home</a></li>
+                        <li><a href="./Updatedaboutus.html" style="color: white;">About Us</a></li>
+                        <li><a href="Blog" style="color: white;">Blog</a></li>
+                        <li><a href="./ContactUs.html" style="color: white;">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="d-flex" style="margin-left: 94px;">
+                        <a href="https://www.facebook.com/TalentOnlineServices?mibextid=ZbWKwL"><img src="./facebook.avif" alt="Facebook" style="width: 30px; height: 30px;"></a>
+                        <a href="https://www.instagram.com/talentonlineservices?utm_source=qr"><img src="./instegram.jpg" alt="Instagram" style="width: 30px; height: 30px; margin-left: 10px;"></a>
+                        <a href="https://wa.me/0556671198"><img src="./whatsapp.webp" alt="WhatsApp" style="width: 30px; height: 30px; margin-left: 10px;"></a>
+                        <a href="https://www.linkedin.com/in/talento-online-services-967538310?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BuxoFRjwgRzmP0hAOJG1Zzg%3D%3D"><img src="./hd-blue-linkedin-in-text-word-png-31624155568wkoqhbzpbn.png" alt="LinkedIn" style="width: 30px; height: 30px; margin-left: 10px;"></a>
+                        <a href="https://www.snapchat.com/add/talento746?share_id=i2lcrLRSgxY&locale=en-GB"><img src="./sn.jpeg" alt="Snapchat" style="width: 30px; height: 30px; margin-left: 10px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            &copy; 2023 Talento Online Services. All rights reserved.
+        </div>
+    </footer>
+    </div>
+    </div>
+    
+    </body>
+    
+    </html>
+    
+    

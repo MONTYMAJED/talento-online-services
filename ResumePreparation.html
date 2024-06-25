@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions</title>
+    <title>Custom Pricing Section</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.2.0/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("talentotech746@gmail.com"); // Replace with your EmailJS user ID
+        })();
+    </script> -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('xKtIj-Z8Us3kotPPd')
+  </script>
+    <style>
+        #Main-minuo {
+            background-color: #043452;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+            box-sizing: border-box;
+        }
+
+        .Minuo a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin-right: 20px;
+            transition: color 0.3s, font-size 0.3s;
+        }
+
+        .Minuo a:hover {
+            color: #413d9d;
+            font-size: 20px;
+        }
+
+        .icon img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            transition: background-color 1s;
+        }
+
+        .icon:hover img {
+            background-color: #106c08;
+        }
+        /* Custom CSS for pricing component */
+        .pricing-header {
+            background-color: #f8f9fa;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .card-body {
+            padding: 2rem;
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 50px;
+            padding: 0.5rem 2rem;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+        .pricing-header {
+        background-color: #f8f9fa;
+        padding: 3rem 1rem;
+        text-align: center;
+    }
+    .card {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .card-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .card-body {
+        padding: 2rem;
+    }
+    .btn-custom {
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 50px;
+        padding: 0.5rem 2rem;
+    }
+    .btn-custom:hover {
+        background-color: #0056b3;
+    }
+    /* steps  */
+    .steps-section {
+        margin-top: 4rem;
+        text-align: center;
+    }
+    .step {
+        margin-bottom: 2rem;
+    }
+    .step-icon {
+        font-size: 3rem;
+        color: #007bff;
+        margin-bottom: 1rem;
+    }
+    .step-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+    .step-description {
+        font-size: 1rem;
+        color: #6c757d;
+    }
+
+    /* font */
+    .merriweather-light {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.product-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .terms-container {
+            padding: 20px;
+            background-color: #f4f4f4;
+            margin: 20px auto;
+            width: 50%;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            visibility: hidden;
+        }
+        .terms-content {
+            margin-bottom: 20px;
+        }
+        .submit-container {
+            text-align: center;
+        }
+        .submit-container input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body class="merriweather-light " style="font-size: 16px;">
+    <div class="container">
+         <!-- Main menu -->
+    <div id="Main-minuo">
+        <div class="Minuo">
+            <a href="./updatedhome.html" class="active mate-sc-regular animate__animated animate__zoomIn">Home</a>
+           
+        </div>
+        <div class="icon">
+            <a href="https://wa.me/0556671198">
+                <img src="./whatsapp.webp" alt="WhatsApp">
+            </a>
+            <a href="https://www.instagram.com/talentonlineservices?utm_source=qr">
+                <img src="./instegram.jpg" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/TalentOnlineServices?mibextid=ZbWKwL">
+                <img src="./facebook.avif" alt="Facebook">
+            </a>
+            <a href="https://www.snapchat.com/add/talento746?share_id=i2lcrLRSgxY&locale=en-GB">
+                <img src="./sn.jpeg" alt="Snapchat">
+            </a>
+            <a href="https://www.linkedin.com/in/talento-online-services-967538310?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BuxoFRjwgRzmP0hAOJG1Zzg%3D%3D">
+                <img src="./hd-blue-linkedin-in-text-word-png-31624155568wkoqhbzpbn.png" alt="LinkedIn">
+            </a>
+        </div>
+        <div class="logo">
+            <img src="./Last updated logo.png" alt="Logo" style="height: 65px;">
+        </div>
+    </div>
+    
+    
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+   <!-- Page Content -->
+   <div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <h1 class="mb-4">Resume Preparation</h1>
+            <p>We specialize in preparing professional resumes that help you stand out in the competitive job market.
+                Our expert team will rewrite and enhance your resume, ensuring it is optimized for Applicant Tracking
+                Systems (ATS) and presents your skills and achievements effectively.</p>
+
+            <!-- Resume Submission Form -->
+            <form id="resumeForm">
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" name="fullName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email ID</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mobile" class="form-label">Mobile Number</label>
+                    <input type="tel" class="form-control" id="mobile" name="mobile" required>
+                </div>
+                <div class="mb-3">
+                    <label for="education" class="form-label">Education</label>
+                    <textarea class="form-control" id="education" name="education" rows="3" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="experience" class="form-label">Experience (with dates)</label>
+                    <textarea class="form-control" id="experience" name="experience" rows="3" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="achievement" class="form-label">Achievements (if any)</label>
+                    <textarea class="form-control" id="achievement" name="achievement" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="reference" class="form-label">References (if any)</label>
+                    <textarea class="form-control" id="reference" name="reference" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">Address</label>
+                    <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
+                </div>
+              
+                <div class="submit-container">
+                    <input type="checkbox" id="accept-terms">
+                    <label for="accept-terms"><a href="./Termandcondition.html" style="color:black;">I agree to the terms and conditions</a></label>
+                    <br>
+                    <!-- <button id="submit-button" disabled>Submit</button> -->
+                </div>
+                
+                <script src="script.js"></script>
+                <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+       <!-- Footer -->
+    <footer class="text-white mt-5" style="background-color: rgba(5, 5, 48, 0.962);">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p style="font-size: 16px;">Welcome to Talento Online Services, where we offer a full range of professional online solutions. Our goal is to simplify your life by managing all your needs online, enabling you to prioritize what matters most. Enjoy seamless, expert service from home while we take care of everything for you.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled" style="color: white;">
+                        <li><a href="./updatedhome.html" style="color: white;">Home</a></li>
+                        <li><a href="./Updatedaboutus.html" style="color: white;">About Us</a></li>
+                        <li><a href="./blogs.jpeg" style="color: white;">Bolg</a></li>
+                        <li><a href="contact us.html" style="color: white;">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="d-flex" style="margin-left: 126px;">
+                        <a href="https://www.facebook.com/TalentOnlineServices?mibextid=ZbWKwL"><img src="./facebook.avif" alt="Facebook" style="width: 30px; height: 30px;"></a>
+                        <a href="https://www.instagram.com/talentonlineservices?utm_source=qr"><img src="./instegram.jpg" alt="Instagram" style="width: 30px; height: 30px; margin-left: 10px;"></a>
+                        <a href="https://wa.me/0556671198"><img src="./whatsapp.webp" alt="WhatsApp" style="width: 30px; height: 30px; margin-left: 10px;"></a>
+                        <a href="https://www.linkedin.com/in/talento-online-services-967538310?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BuxoFRjwgRzmP0hAOJG1Zzg%3D%3D"><img src="./hd-blue-linkedin-in-text-word-png-31624155568wkoqhbzpbn.png" alt="LinkedIn" style="width: 30px; height: 30px; margin-left: 10px;"></a>
+                        <a href="https://www.snapchat.com/add/talento746?share_id=i2lcrLRSgxY&locale=en-GB"><img src="./sn.jpeg" alt="Snapchat" style="width: 30px; height: 30px; margin-left: 10px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            &copy; 2023 Talento Online Services. All rights reserved.
+        </div>
+    </footer>
+    </div>
+    </div>
+   
+</body>
+<script type="text/javascript">
+
+    // for terms and condition//
+    document.addEventListener("DOMContentLoaded", function() {
+    const checkbox = document.getElementById('accept-terms');
+    const submitButton = document.getElementById('submit-button');
+
+    checkbox.addEventListener('change', function() {
+        submitButton.disabled = !checkbox.checked;
+    });
+
+    submitButton.addEventListener('click', function(event) {
+        if (!checkbox.checked) {
+            event.preventDefault();
+            alert('You must agree to the terms and conditions before submitting.');
+        }
+    });
+});
+
+ // for terms and condition//
+
+
+
+    document.getElementById('resumeForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+             var fullname = document.getElementById("fullName").value
+             var email = document.getElementById("email").value
+             var mobile= document.getElementById("mobile").value
+             var education = document.getElementById("education").value
+             var experience = document.getElementById("experience").value
+             var achievement = document.getElementById("achievement").value
+             var reference = document.getElementById("reference").value
+             var address = document.getElementById("address").value
+
+            // const data = {
+            // };
+            // formData.forEach((value, key) => {
+            //     data[key] = value;
+            // });
+            const data = {fullname , email , mobile, education,experience, achievement,reference ,address}
+
+        // Get the form data
+        // const formData = new FormData(event.target);
+
+        // // Convert formData to an object
+        // const data = {};
+        // formData.forEach((value, key) => {
+        //     data[key] = value;
+        // });
+
+        // Send the email using EmailJS
+        emailjs.send('service_lkzq5nd', 'template_uldxfj4', data)
+            .then(function (response) {
+                alert('Your resume has been submitted successfully.');
+            }, function (error) {
+                alert('There was an error submitting your resume. Please try again.');
+            });
+    });
+
+    
+
+
+</script>
+</html>
+    
+    
