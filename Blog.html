@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talento Blog</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 20px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        .blog-header {
+            margin-bottom: 40px;
+        }
+
+        .blog-post {
+            margin-bottom: 20px;
+        }
+
+        .blog-form {
+            margin-bottom: 40px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Main menu */
+        #Main-minuo {
+            background-color: #043452;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+            box-sizing: border-box;
+        }
+
+        .Minuo a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin-right: 20px;
+            transition: color 0.3s, font-size 0.3s;
+        }
+
+        .Minuo a:hover {
+            color: #413d9d;
+            font-size: 20px;
+        }
+
+        .icon img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            transition: background-color 1s;
+        }
+
+        .icon:hover img {
+            background-color: #106c08;
+        }
+
+        .logo img {
+            height: 65px;
+        }
+
+        /* Blog Section */
+        .description-section {
+            margin-bottom: 40px;
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .description-section .col-md-8,
+            .description-section .col-md-4 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+
+            .card img {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body class="roboto-condensed">
+    <!-- Main menu -->
+    <div id="Main-minuo">
+        <div class="Minuo">
+            <a href="./updatedhome.html" class="active mate-sc-regular animate__animated animate__zoomIn">Home</a>
+        </div>
+        <div class="icon">
+            <a href="https://wa.me/0556671198">
+                <img src="./whatsapp.webp" alt="WhatsApp">
+            </a>
+            <a href="https://www.instagram.com/talentonlineservices?utm_source=qr">
+                <img src="./instegram.jpg" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/TalentOnlineServices?mibextid=ZbWKwL">
+                <img src="./facebook.avif" alt="Facebook">
+            </a>
+            <a href="https://www.snapchat.com/add/talento746?share_id=i2lcrLRSgxY&locale=en-GB">
+                <img src="./sn.jpeg" alt="Snapchat">
+            </a>
+            <a href="https://www.linkedin.com/in/talento-online-services-967538310?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BuxoFRjwgRzmP0hAOJG1Zzg%3D%3D">
+                <img src="./hd-blue-linkedin-in-text-word-png-31624155568wkoqhbzpbn.png" alt="LinkedIn">
+            </a>
+        </div>
+        <div class="logo">
+            <img src="./Last updated logo.png" alt="Logo">
+        </div>
+    </div>
+
+    <div class="container">
+        <header class="blog-header text-center">
+            <h1>Talento Blog</h1>
+            <p class="lead">Your source for information on our services.</p>
+        </header>
+
+        <!-- Description Section -->
+        <div class="row description-section">
+            <div class="col-md-8 mb-3 mb-md-0">
+                <img src="./blogs.jpeg" class="img-fluid" alt="Description Image">
+            </div>
+            <div class="col-md-4">
+                <p>Welcome to Talento Online Services, where we offer a full range of professional online solutions. Our goal is to simplify your life by managing all your needs online, enabling you to prioritize what matters most. Enjoy seamless, expert service from home while we take care of everything for you.</p>
+            </div>
+        </div>
+
+        <!-- Featured Posts -->
+        <div class="row mb-4">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <div class="card">
+                    <img src="./cheapestunversities.webp" class="card-img-top" alt="Cheapest Universities in Rwanda">
+                    <div class="card-body">
+                        <h5 class="card-title">The Cheapest Universities in Rwanda</h5>
+                        <p class="card-text">Discover the most affordable universities in Rwanda and learn about their programs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="./Disastervisa.webp" class="card-img-top" alt="Disaster Visa for Sudanese">
+                    <div class="card-body">
+                        <h5 class="card-title">Disaster Visa for Sudanese</h5>
+                        <p class="card-text">Learn how to apply for a disaster visa if you are a Sudanese national affected by recent events.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Previous Posts and Famous Content -->
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Previous Posts</h4>
+                <div id="previousPosts" class="list-group">
+                    <!-- Previous posts will be appended here -->
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h4>Famous Content</h4>
+                <div id="famousContent" class="list-group">
+                    <!-- Famous content will be appended here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Control Panel: Hidden by default -->
+        <div id="controlPanel" class="blog-form hidden">
+            <h2>Add a New Blog Post</h2>
+            <form id="blogForm">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" id="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="content">Content</label>
+                    <textarea class="form-control" id="content" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" class="form-control" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="photo">Photo</label>
+                    <input type="file" class="form-control-file" id="photo" accept="image/*">
+                </div>
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select class="form-control" id="category" required>
+                        <option value="previous">Previous Posts</option>
+                        <option value="famous">Famous Content</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Post</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const previousPostsContainer = document.getElementById('previousPosts');
+            const famousContentContainer = document.getElementById('famousContent');
+            const blogForm = document.getElementById('blogForm');
+            const controlPanel = document.getElementById('controlPanel');
+            const ownerPassword = "Monty2023..."; // Set a password for the website owner
+
+            // Function to add blog post to the container
+            function addBlogPost(post) {
+                const postElement = document.createElement('div');
+                const postImage = post.photo ? URL.createObjectURL(post.photo) : 'https://via.placeholder.com/150';
+                postElement.className = 'list-group-item list-group-item-action';
+                postElement.innerHTML = `
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">${post.title}</h5>
+                        <small>${post.date}</small>
+                    </div>
+                    <p class="mb-1">${post.content}</p>
+                    ${post.photo ? `<img src="${postImage}" class="img-fluid mt-2" alt="Blog Post Image">` : ''}
+                `;
+                if (post.category === 'previous') {
+                    previousPostsContainer.appendChild(postElement);
+                } else if (post.category === 'famous') {
+                    famousContentContainer.appendChild(postElement);
+                }
+            }
+
+            // Sample blog posts
+            const blogPosts = [
+                {
+                    title: 'Simplifying the Application Process for Universities in Rwanda',
+                    content: 'Talento online services provide Simplifying applying to universities in Rwanda, from showcasing universities and their prices to managing the visa process and accommodation.',
+                    date: 'June 21, 2024',
+                    photo: '', // Add a sample photo URL if needed
+                    category: 'previous'
+                },
+                {
+                    title: 'Hotel Reservations',
+                    content: 'Talento will help you with your hotel reservations, ensuring you get the best deals and accommodations for your travel needs.',
+                    date: 'June 18, 2024',
+                    photo: '', // Add a sample photo URL if needed
+                    category: 'previous'
+                },
+                {
+                    title: 'War Residency and Saudi Family Visa Assistance',
+                    content: 'Discover our comprehensive services for obtaining War Residency and Saudi Family Visas, including document preparation and submission.',
+                    date: 'June 15, 2024',
+                    photo: '', // Add a sample photo URL if needed
+                    category: 'famous'
+                },
+                {
+                    title: 'Professional Website Creation',
+                    content: 'Explore our website creation services designed to bring your ideas to life with professional and modern web solutions.',
+                    date: 'June 10, 2024',
+                    photo: '', // Add a sample photo URL if needed
+                    category: 'famous'
+                }
+            ];
+
+            // Load and display blog posts
+            blogPosts.forEach(addBlogPost);
+
+            // Handle form submission
+            blogForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const title = document.getElementById('title').value;
+                const content = document.getElementById('content').value;
+                const date = document.getElementById('date').value;
+                const photo = document.getElementById('photo').files[0];
+                const category = document.getElementById('category').value;
+
+                const newPost = {
+                    title,
+                    content,
+                    date,
+                    photo,
+                    category
+                };
+
+                addBlogPost(newPost);
+                blogForm.reset();
+            });
+
+            // Prompt for password to show control panel
+            const userPassword = prompt("Enter password to access control panel:");
+            if (userPassword === ownerPassword) {
+                controlPanel.classList.remove('hidden');
+            } else {
+                alert("Access denied!");
+            }
+        });
+    </script>
+</body>
+
+</html>
